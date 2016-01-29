@@ -4,6 +4,7 @@
 	$kucuktenBuyuge = $notlar;
 	arsort($buyuktenKucuge);
 	asort($kucuktenBuyuge);
+	$toplam=0;
 ?>
 
 <table border="2">
@@ -19,7 +20,9 @@
 			<td><?php echo $key; ?></td>
 			<td><?php echo $value; ?></td>
 		</tr>
-		<?php } ?>
+		<?php 
+		$toplam=$toplam+$value;
+		} ?>
 </table>
 
 <p>En yuksek not : <?php 
@@ -27,9 +30,16 @@
 		echo $key."--".$value;
 		break;
 	}?></p>
-	
+
 <p>En dusuk not : <?php 
 	foreach ($kucuktenBuyuge as $key => $value) {
 		echo $key."--".$value;
 		break;
 	} ?></p>
+
+<p>Standart Sapma : <?php 
+$sonuc=$toplam/count($notlar);
+echo $sonuc; ?></p>
+
+	
+	
