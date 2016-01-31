@@ -1,9 +1,11 @@
-<?php 
-	//Bu sayfada hoşgeldiniz yazıları falan bulunacak..
-
-	//teste başla butonuda olacak
-include "header/header.php"
+<?php session_start();
+	// en başlangıç sayfası olacak. 
+	//hoşgwldiniz falan olcak - start quiz butonu olcak.
+	include "inc/header.php";
+	include "questions.php";
  ?>
- <h1>Hoşgeldiniz :)</h1>
- <p>10 adet soru sizi beklemektedir.</p>
-<a href="quiz.php"><button type="button" class="btn btn-success">Teste Başla</button></a>
+ <h1>Basit quiz sistemine hoşgeldiniz</h1>
+ <p>Birazdan <?=count($questions) ?> tane quiz sorusunu cevaplayacaksınız. Hazır mısın??</p>
+<a href="quiz.php"><button type="button" class="btn btn-primary btn-lg">Quize Başla</button></a>
+
+ <?php include "inc/footer.php"; ?>

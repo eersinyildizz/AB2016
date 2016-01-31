@@ -1,38 +1,50 @@
 <?php 
-	// quiz sorularını burda yazacağım. Hepsi dizi içinde tanımlı olacak...
-	
+	//tüm sorular burda olacak ve database den çeklecek
+	//sorular databaseden çekilecek.
+
 	$questions = [
-		["Türkiye'nin başkenti neresidir ?",[
-			"A" => "İstanbul",
-			"B" => "Ankara",
-			"C" => "İzmir",
-			"D" => "Aydın",
-		],"B"],
+		[
+			"Turkiye nin başkenti neresidir?", 
+			[
+				"A" => "Ankara",
+				"B" => "İzmir",
+				"C" => "Aydın",
+				"D" => "Mugla"
+			],
+			"A"
+		],
 
-		["Şu an hangi şehirdesin ?",[
-			"A" => "Hatay",
-			"B" => "Van",
-			"C" => "İzmir",
-			"D" => "Aydın",
-		],"D"],	
+		[
+			"Şu an hangi neredesin?", 
+			[
+				"A" => "Ankara",
+				"B" => "İzmir",
+				"C" => "Aydın",
+				"D" => "Mugla"
+			],
+			"C"
+		],
 
-		["Şu an aldığın eğitim nedir ?",[
-			"A" => "PHP",
-			"B" => "JAVA",
-			"C" => "ANGULAR JS",
-			"D" => "SCHEME",
-		],"A"],
+		[
+			"Hangi üniversitede öğrencisin?", 
+			[
+				"A" => "İTÜ",
+				"B" => "İYTE",
+				"C" => "ADÜ",
+				"D" => "EGE"
+			],
+			"B"
+		],
 
-		["2*2 kactır ?",[
-			"A" => "4",
-			"B" => "5",
-			"C" => "8",
-			"D" => "2",
-		],"A"],
-
+		[
+			"Hangi model telefona sahipsin", 
+			[
+				"A" => "Samsung",
+				"B" => "Apple",
+				"C" => "HTC",
+				"D" => "Sony"
+			],
+			"C"
+		]
 	];
-
-/*	$sorular=$questions[0][0];*/
-	
  ?>
-
